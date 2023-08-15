@@ -125,6 +125,10 @@ export default {
 };
 </script>
   <style scoped>
+.ep-main {
+  text-align: center;
+  max-width: 1400px;
+}
 .title-icon {
   background: url(https://n1image.hjfile.cn/res7/2020/07/06/77cda6a48ddb4a32a5660395eacd678e.png)
     no-repeat 0;
