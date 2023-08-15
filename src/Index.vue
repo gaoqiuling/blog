@@ -1,19 +1,17 @@
 <template>
-  <el-container>
-    <el-aside width="17%" style="background: #fff"></el-aside>
+  <el-config-provider namespace="ep">
     <el-container>
-      <el-main class="backimg">
-        <!-- 走马灯 -->
-        <div>
+      <el-aside :span="4" style="background: #fff"></el-aside>
+      <el-container>
+        <el-main class="backimg">
+          <!-- 走马灯 -->
           <el-carousel indicator-position="outside">
             <el-carousel-item v-for="(item, index) in 5" :key="item">
               <img :src="bannerImgs[index]" />
             </el-carousel-item>
           </el-carousel>
-        </div>
-        <el-container>
-          <el-main>
-            <div>
+          <el-container>
+            <el-main>
               <el-row :gutter="10">
                 <el-col>
                   <h3>
@@ -84,21 +82,21 @@
                   </el-card>
                 </el-col>
               </el-row>
-            </div>
-          </el-main>
-          <el-aside width="400">
-            <video width="360" height="270" controls autoplay="autoplay">
-              <source
-                src="https://record-manual.cctalk.com/15e5dfee45492d4e2b2b73a39c9d599e.mp4?auth_key=1691759999-5be382b762384b17a3ddf13e20a99d2e-0-b062acf950c28e481ef1fe72e933ba82"
-                type="video/mp4"
-              />
-            </video>
-          </el-aside>
-        </el-container>
-      </el-main>
+            </el-main>
+            <el-aside width="400">
+              <video width="360" height="270" controls autoplay="autoplay">
+                <source
+                  src="https://record-manual.cctalk.com/15e5dfee45492d4e2b2b73a39c9d599e.mp4?auth_key=1691759999-5be382b762384b17a3ddf13e20a99d2e-0-b062acf950c28e481ef1fe72e933ba82"
+                  type="video/mp4"
+                />
+              </video>
+            </el-aside>
+          </el-container>
+        </el-main>
+      </el-container>
+      <el-aside :span="4" style="background: #fff"></el-aside>
     </el-container>
-    <el-aside width="17%" style="background: #fff"></el-aside>
-  </el-container>
+  </el-config-provider>
 </template>
   
   <script>
