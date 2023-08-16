@@ -5,7 +5,7 @@
       <el-container>
         <el-main class="backimg">
           <!-- 走马灯 -->
-          <el-carousel indicator-position="outside">
+          <el-carousel type="card" arrow="always">
             <el-carousel-item v-for="(item, index) in 5" :key="item">
               <img :src="bannerImgs[index]" />
             </el-carousel-item>
@@ -85,10 +85,7 @@
             </el-main>
             <el-aside width="400">
               <video width="360" height="270" controls autoplay="autoplay">
-                <source
-                  src="https://record-manual.cctalk.com/15e5dfee45492d4e2b2b73a39c9d599e.mp4?auth_key=1691759999-5be382b762384b17a3ddf13e20a99d2e-0-b062acf950c28e481ef1fe72e933ba82"
-                  type="video/mp4"
-                />
+                <source :src="videoUrl" type="video/mp4" />
               </video>
             </el-aside>
           </el-container>
@@ -118,6 +115,8 @@ export default {
         "https://cc.hjfile.cn/cc/img/20230228/2023022810334458446972.jpg?imageView2/2/w/1000/format/webp/ignore-error/1",
         "https://cc.hjfile.cn/cc/img/20230803/2023080305075785745856.jpg?imageView2/2/w/1000/format/webp/ignore-error/1",
       ],
+      videoUrl:
+        "https://record-manual.cctalk.com/record/ba27447fbcde4f0379e50c4148344b61.mp4?auth_key=1692189219-244e864b362b45b5b754cfeb968543ea-0-d0edff11331ce7ea27685cb5b6729930",
     };
   },
 };

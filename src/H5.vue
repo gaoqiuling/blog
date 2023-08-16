@@ -3,9 +3,16 @@
     <el-container>
       <el-main class="backimg">
         <!-- 走马灯 -->
-        <el-carousel indicator-position="outside">
+        <el-carousel arrow="always">
           <el-carousel-item v-for="(item, index) in 5" :key="item">
             <img :src="bannerImgs[index]" />
+          </el-carousel-item>
+        </el-carousel>
+        <el-carousel :autoplay="false" trigger="click" arrow="always">
+          <el-carousel-item v-for="(item, index) in 3" :key="item">
+            <video width="360" height="270" controls>
+              <source :src="videoUrls[index]" type="video/mp4" />
+            </video>
           </el-carousel-item>
         </el-carousel>
         <el-row>
@@ -16,10 +23,10 @@
             </h3>
           </el-col>
           <el-col
-            :span="6"
+            :span="7"
             v-for="(o, index) in 3"
             :key="o"
-            :lg="6"
+            :xs="7"
             :offset="index > 0 ? 1 : 0"
           >
             <el-card :body-style="{ padding: '0px', borderRadius: '6px' }">
@@ -38,10 +45,10 @@
             </h3>
           </el-col>
           <el-col
-            :span="6"
+            :span="7"
             v-for="(o, index) in 3"
             :key="o"
-            :lg="6"
+            :xs="7"
             :offset="index > 0 ? 1 : 0"
           >
             <el-card :body-style="{ padding: '0px', borderRadius: '6px' }">
@@ -60,10 +67,10 @@
             </h3>
           </el-col>
           <el-col
-            :span="6"
+            :span="7"
             v-for="(o, index) in 2"
             :key="o"
-            :lg="6"
+            :xs="7"
             :offset="index > 0 ? 1 : 0"
           >
             <el-card :body-style="{ padding: '0px', borderRadius: '6px' }">
@@ -97,6 +104,11 @@ export default {
         "https://cc.hjfile.cn/cc/img/20230808/2023080804550311489068.png?imageView2/2/w/1000/format/webp/ignore-error/1",
         "https://cc.hjfile.cn/cc/img/20230228/2023022810334458446972.jpg?imageView2/2/w/1000/format/webp/ignore-error/1",
         "https://cc.hjfile.cn/cc/img/20230803/2023080305075785745856.jpg?imageView2/2/w/1000/format/webp/ignore-error/1",
+      ],
+      videoUrls: [
+        "https://record-manual.cctalk.com/record/ba27447fbcde4f0379e50c4148344b61.mp4?auth_key=1692189219-244e864b362b45b5b754cfeb968543ea-0-d0edff11331ce7ea27685cb5b6729930",
+        "https://record-manual.cctalk.com/record/ba27447fbcde4f0379e50c4148344b61.mp4?auth_key=1692189235-34474fb473e64b63923e06b24797084b-0-73b9b3261a4afb3c40b44209ed8575b0",
+        "https://record-manual.cctalk.com/record/ba27447fbcde4f0379e50c4148344b61.mp4?auth_key=1692189235-34474fb473e64b63923e06b24797084b-0-73b9b3261a4afb3c40b44209ed8575b0",
       ],
     };
   },
@@ -165,6 +177,7 @@ export default {
   white-space: normal;
   font-size: 14px;
   line-height: 18px;
+  text-align: left;
 }
 
 .button {
@@ -177,7 +190,7 @@ export default {
   display: block;
 }
 .backimg {
-  background-image: url(https://cc.hjfile.cn/cc/img/20230815/2023081510454609121153.jpg);
+  background-image: url(https://cc.hjfile.cn/cc/img/20230816/2023081604173368132296.png);
   background-size: 100% 100%;
 }
 </style>
