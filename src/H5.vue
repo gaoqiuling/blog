@@ -116,7 +116,6 @@ export default {
 </script>
   <style scoped>
 .ep-main {
-  text-align: center;
   max-width: 1400px;
 }
 .title-icon {

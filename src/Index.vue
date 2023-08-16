@@ -123,7 +123,7 @@ export default {
 </script>
   <style scoped>
 .ep-main {
-  text-align: center;
+  text-align: left;
   max-width: 1400px;
 }
 .title-icon {
@@ -159,6 +159,7 @@ export default {
   font-size: 14px;
   line-height: 18px;
   /* height: 36px; */
+  text-align: left;
 }
 
 .bottom .tag {
