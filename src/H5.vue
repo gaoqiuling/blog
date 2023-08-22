@@ -121,7 +121,8 @@ export default {
 .title-icon {
   background: url(https://n1image.hjfile.cn/res7/2020/07/06/77cda6a48ddb4a32a5660395eacd678e.png)
     no-repeat 0;
-  background-size: contain;
+  background-size: cover;
+  background-position: center center;
   width: 55px;
   height: 30px;
   display: inline-block;
@@ -135,22 +136,21 @@ export default {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   position: relative;
-  background-size: contain;
+  background-size: cover;
+  background-position: center center;
 }
 
 .bottom {
   display: -webkit-box;
-  text-overflow: ellipsis;
-  -webkit-box-orient: block-axis;
-  overflow: hidden;
   -webkit-line-clamp: 2;
+  -webkit-box-orient: block-axis;
+  text-overflow: ellipsis;
+  overflow: hidden;
   margin: 0 4px 4px 4px;
-  /* width: 112px; */
   word-break: break-all;
   white-space: normal;
   font-size: 14px;
   line-height: 18px;
-  /* height: 36px; */
 }
 
 .bottom .tag {
@@ -168,8 +168,8 @@ export default {
 .bottom .desc {
   text-overflow: ellipsis;
   -webkit-box-orient: block-axis;
-  overflow: hidden;
   -webkit-line-clamp: 2;
+  overflow: hidden;
   margin: 0 0 4px;
   /* width: 112px; */
   word-break: break-all;
@@ -190,7 +190,8 @@ export default {
 }
 .backimg {
   background-image: url(https://cc.hjfile.cn/cc/img/20230816/2023081604173368132296.png);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center center;
 }
 </style>
   

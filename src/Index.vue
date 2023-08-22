@@ -129,7 +129,7 @@ export default {
 .title-icon {
   background: url(https://n1image.hjfile.cn/res7/2020/07/06/77cda6a48ddb4a32a5660395eacd678e.png)
     no-repeat 0;
-  background-size: contain;
+  background-size: cover;
   width: 55px;
   height: 30px;
   display: inline-block;
@@ -153,12 +153,10 @@ export default {
   overflow: hidden;
   -webkit-line-clamp: 2;
   margin: 0 4px 4px 4px;
-  /* width: 112px; */
   word-break: break-all;
   white-space: normal;
   font-size: 14px;
   line-height: 18px;
-  /* height: 36px; */
   text-align: left;
 }
 
@@ -180,7 +178,6 @@ export default {
   overflow: hidden;
   -webkit-line-clamp: 2;
   margin: 0 0 4px;
-  /* width: 112px; */
   word-break: break-all;
   white-space: normal;
   font-size: 14px;
@@ -198,7 +195,8 @@ export default {
 }
 .backimg {
   background-image: url(https://cc.hjfile.cn/cc/img/20230815/2023081510454609121153.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 </style>
   
